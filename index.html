@@ -1,0 +1,782 @@
+<HTML>
+<title>Student Opinion Report</title>
+
+<link rel="stylesheet" href="style.css">
+
+<img src="CULogo.jpg" width="480" height="100"> 
+
+<h1 align="middle"> STUDENT OPINION REPORT </h1>
+
+<h2 align="middle"> Your opinion matters. Please provide your honest feedback. Try to attempt every question. </h2>
+
+<body> <center>
+
+	<form method="post" action="https://3207.caldwell.edu/php/sop.php">
+
+
+<br>
+<fieldset>
+<table cellspacing="5" cellpadding="1" colspan="3" >
+
+<tr  >
+   <td ><span class="fmlabel"> Course Title:</span></td>
+   <td width="25%">
+       <input name="ctitle" size="40">
+   </td>
+<br>
+   <td  ><span class="fmlabel">Course Code:</span></td>
+   <td width="25%">
+      <input  name="cnumber" size ="20">
+   </td>
+   
+   <td  ><span class="fmlabel">Course Section:</span></td>
+   <td width="2%"> 
+      <input  name="csection" size ="10">
+   </td>
+</tr>
+
+<tr colspan="3">
+   <td width="70" valign="top"><span class="fmlabel">Instructor:</span></td>
+   <td>
+	<input name="instructor" size="40">
+   </td>
+    <td width="70" valign="top"><span class="fmlabel">Semester:</span></td>
+   <td width="350" valign="top">
+      <select name="csemester"">
+      <option value="0">Choose the semester
+      <option value="Fall">Fall 
+	  <option value="Winter">Winter
+	  <option value="Spring">Spring
+	  <option value="Summer">Summer
+      </select>
+	  </td>
+	  <td width="70" valign="top"><span class="fmlabel">Year:</span></td>
+   <td width="350" valign="top">
+	  <select name="cyear">
+      <option>Year</option>
+      <option value="2019">2019<option value="2020">2020<option value="2021">2021<option value="2022">2022<option value="2023">2023<option value="2024">2024<option value="2025">2025
+      <option value="2026">2026<option value="2027">2027<option value="2028">2028<option value="2029">2029<option value="2030">2030
+      </select>
+   </td>
+</tr>
+<tr  colspan="2">
+   <td><span class="fmlabel"> Student's Major:</span></td>
+   <td>
+       <input name="smajor" size="40">
+   </td>
+	  <td  valign="top"><span class="fmlabel">Anticipated Grade:</span></td>
+   <td width="350" valign="top">
+	  <select name="antgrade">
+      <option>Grade</option>
+      <option value="A">A<option value="B">B<option value="C">C<option value="D">D<option value="E">E<option value="F">F
+      </select>
+   
+   </td>
+
+</table>
+</fieldset>
+</td>
+</tr>
+	
+<br>
+<fieldset>
+<table>
+<br>
+
+<tr>
+Why did you take this course?
+
+      <select name="qA"">
+      <option value="0">Please choose one.
+      <option value="major">Major requirement
+      <option value="core">Core requirement
+	  <option value="elective">Elective requirement
+	  <option value="interest">Out of interest
+	  
+      </select>
+	  
+</tr><br><br>
+
+<tr>
+What did you like about the course?
+<br>
+<textarea name ="qB" rows="3" cols="200" onfocus="this.value=''" >Enter your remarks here.</textarea>
+</tr><br><br>
+<tr>
+What changes, if any, would you like to see in this course?
+<br>
+<textarea name ="qC" rows="3" cols="200" onfocus="this.value=''" >Enter your remarks here.</textarea>
+</tr><br><br>
+<tr>
+What do you think are the instructor’s strong points?
+<br>
+<textarea name ="qD" rows="3" cols="200" onfocus="this.value=''" >Enter your remarks here..</textarea>
+</tr><br><br>
+<tr>
+What do you think the instructor might do to be more effective? 
+<br>
+<textarea name ="qE" rows="3" cols="200" onfocus="this.value=''" >Enter your remarks here..</textarea>
+</tr><br>
+</table></fieldset>
+
+
+<br>
+<fieldset>
+<table   >
+
+<tr  width="60" >
+ <center><b> Please select the number which most accurately expresses your degree of agreement with each of the following 13 statements.
+ </b></center>
+  	
+</tr>
+</table>
+</fieldset>
+
+
+
+<form>
+
+<table width=950><tr>
+            	<td width> 1. The instructor used class time well in developing the subject matter.</td>
+ </tr></table>		
+<table width="85%">
+	<fieldset>	
+            <tr>
+	<td width="15%">
+				<input type="radio" name="q1" id="q1" value="5">
+				<label for="q1">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q1" id="q1" value="4">
+				<label for="q1">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q1" id="q1" value="3">
+				<label for="q1">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q1" id="q1" value="2">
+				<label for="q1">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q1" id="q1" value="1">
+				<label for="q1">Strongly Disagree</label><br>
+				</td>
+            </tr>
+	</fieldset>
+         </table>
+
+<hr>
+
+	<table width=950>	<tr>
+            	<td width> 2. The teacher is prepared for daily class work.</td>
+            </tr></table>		
+
+		<table width="85%">
+			<fieldset>
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q2" id="q2" value="5">
+				<label for="q2">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q2" id="q2" value="4">
+				<label for="q2">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q2" id="q2" value="3">
+				<label for="q2">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q2" id="q2" value="2">
+				<label for="q2">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q2" id="q2" value="1">
+				<label for="q2">Strongly Disagree</label><br>
+				</td>
+            </tr>
+			</fieldset>
+         </table>
+         
+<hr>
+
+	<table width=950>	<tr>
+            	<td width> 3. Teacher is willing to give extra help.</td>
+            </tr></table>		
+
+		<table width="85%">
+			<fieldset>
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q3" id="q3" value="5">
+				<label for="q3">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q3" id="q3" value="4">
+				<label for="q3">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q3" id="q3" value="3">
+				<label for="q3">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q3" id="q3" value="2">
+				<label for="q3">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q3" id="q3" value="1">
+				<label for="q3">Strongly Disagree</label><br>
+				</td>
+            </tr>
+			</fieldset>
+         </table>         
+<hr>
+
+	<table width=950>	<tr>
+            	<td width> 4. Teacher's speech and vocabulary are clear.</td>
+            </tr></table>		
+
+		<table width="85%">
+			<fieldset>
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q4" id="q4" value="5">
+				<label for="q4">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q4" id="q4" value="4">
+				<label for="q4">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q4" id="q4" value="3">
+				<label for="q4">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q4" id="q4" value="2">
+				<label for="q4">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q4" id="q4" value="1">
+				<label for="q4">Strongly Disagree</label><br>
+				</td>
+            </tr>
+			</fieldset>
+         </table>         
+<hr>
+
+	<table width=950>	<tr>
+            	<td width> 5. The grading policies are fair.</td>
+            </tr></table>		
+
+		<table width="85%">
+			<fieldset>
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q5" id="q5" value="5">
+				<label for="q5">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q5" id="q5" value="4">
+				<label for="q5">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q5" id="q5" value="3">
+				<label for="q5">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q5" id="q5" value="2">
+				<label for="q5">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q5" id="q5" value="1">
+				<label for="q5">Strongly Disagree</label><br>
+				</td>
+            </tr>
+			</fieldset>
+         </table>         
+<hr>
+
+	<table width=950>	<tr>
+            	<td width> 6. Students are given adequate opportunities to improve their grade.</td>
+            </tr></table>		
+
+		<table width="85%">
+			<fieldset>
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q6" id="q6" value="5">
+				<label for="q6">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q6" id="q6" value="4">
+				<label for="q6">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q6" id="q6" value="3">
+				<label for="q6">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q6" id="q6" value="2">
+				<label for="q6">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q6" id="q6" value="1">
+				<label for="q6">Strongly Disagree</label><br>
+				</td>
+            </tr>
+			</fieldset>
+         </table>         
+<hr>
+
+	<table width=950>	<tr>
+            	<td width> 7. The teacher discusses the tests after.</td>
+            </tr></table>		
+
+		<table width="85%">
+			<fieldset>
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q7" id="q7" value="5">
+				<label for="q7">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q7" id="q7" value="4">
+				<label for="q7">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q7" id="q7" value="3">
+				<label for="q7">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q7" id="q7" value="2">
+				<label for="q7">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q7" id="q7" value="1">
+				<label for="q7">Strongly Disagree</label><br>
+				</td>
+            </tr>
+			</fieldset>
+         </table>         
+<hr>
+
+	<table width=950>	<tr>
+            	<td width> 8. Everyone recieves as much individual attention as they need.</td>
+            </tr></table>		
+
+		<table width="85%">
+			<fieldset>
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q8" id="q8" value="5">
+				<label for="q8">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q8" id="q8" value="4">
+				<label for="q8">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q8" id="q8" value="3">
+				<label for="q8">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q8" id="q8" value="2">
+				<label for="q8">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q8" id="q8" value="1">
+				<label for="q8">Strongly Disagree</label><br>
+				</td>
+            </tr>
+			</fieldset>
+         </table>         
+<hr>
+
+	<table width=950>	<tr>
+            	<td width> 9. The teacher makes students participate in class matters.</td>
+            </tr></table>		
+
+		<table width="85%">
+			<fieldset>
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q9" id="q9" value="5">
+				<label for="q9">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q9" id="q9" value="4">
+				<label for="q9">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q9" id="q9" value="3">
+				<label for="q9">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q9" id="q9" value="2">
+				<label for="q9">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q9" id="q9" value="1">
+				<label for="q9">Strongly Disagree</label><br>
+				</td>
+            </tr>
+			</fieldset>
+         </table>         
+<hr>
+
+	<table width=950>	<tr>
+            	<td width> 10. Reading materials were appropriate and effective.</td>
+            </tr></table>		
+
+		<table width="85%">
+			<fieldset>
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q10" id="q10" value="5">
+				<label for="q10">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q10" id="q10" value="4">
+				<label for="q10">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q10" id="q10" value="3">
+				<label for="q10">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q10" id="q10" value="2">
+				<label for="q10">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q10" id="q10" value="1">
+				<label for="q10">Strongly Disagree</label><br>
+				</td>
+            </tr>
+			</fieldset>
+         </table>         
+<hr>
+
+	<table width=950>	<tr>
+            	<td width> 11. Presentations (Powerpoints) were affective.</td>
+            </tr></table>		
+
+		<table width="85%">
+			<fieldset>
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q11" id="q11" value="5">
+				<label for="q11">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q11" id="q11" value="4">
+				<label for="q11">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q11" id="q11" value="3">
+				<label for="q11">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q11" id="q11" value="2">
+				<label for="q11">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q11" id="q11" value="1">
+				<label for="q11">Strongly Disagree</label><br>
+				</td>
+            </tr>
+			</fieldset>
+         </table>         
+<hr>
+
+	<table width=950>	<tr>
+            	<td width> 12. The teacher makes students collaborate on projects.</td>
+            </tr></table>		
+
+		<table width="85%">
+			<fieldset>
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q12" id="q12" value="5">
+				<label for="q12">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q12" id="q12" value="4">
+				<label for="q12">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q12" id="q12" value="3">
+				<label for="q12">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q12" id="q12" value="2">
+				<label for="q12">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q12" id="q12" value="1">
+				<label for="q12">Strongly Disagree</label><br>
+				</td>
+            </tr>
+			</fieldset>
+         </table>         
+<hr>
+
+	<table width=950>	<tr>
+            	<td width> 13. Students had opportunities to use advanced opportunities.</td>
+            </tr></table>		
+
+		<table width="85%">
+			<fieldset>
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q13" id="q13" value="5">
+				<label for="q13">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q13" id="q13" value="4">
+				<label for="q13">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q13" id="q13" value="3">
+				<label for="q13">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q13" id="q13" value="2">
+				<label for="q13">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q13" id="q13" value="1">
+				<label for="q13">Strongly Disagree</label><br>
+				</td>
+            </tr>
+			</fieldset>
+         </table>         
+<hr>
+
+	<table width=950>	<tr>
+            	<td width> 13. Approximately how many hours per week did you invest time in ithis course outside of class.</td>
+            </tr></table>		
+
+		<table width="85%">
+			<fieldset>
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q14" id="q14" value="5">
+				<label for="q13">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q13" id="q13" value="4">
+				<label for="q13">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q13" id="q13" value="3">
+				<label for="q13">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q13" id="q13" value="2">
+				<label for="q13">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q13" id="q13" value="1">
+				<label for="q13">Strongly Disagree</label><br>
+				</td>
+            </tr>
+			</fieldset>
+         </table>  
+
+<hr>
+<table width="85%">
+
+            <tr>
+	<td width="15%">
+14. Approximately how many hours per week did you spend outside of class for this course?
+<input  name="q14" size="3">
+            </tr>
+
+         </table>
+<hr>
+</fieldset>
+	<br>
+	<fieldset >
+<table   >
+
+<tr   >
+ <center><b> Please comment on the following course material ands and activities as applicable.
+ </b></center>
+</tr>
+</table>
+</fieldset>
+<br>
+
+<fieldset>
+<table>
+<tr>
+Main texts:
+<br><br>
+<textarea name ="q15" rows="3" cols="200" onfocus="this.value=''" >Your opinion on the main texts of the course.</textarea>
+</tr><br><br>
+<tr>
+Tests:
+<br><br>
+<textarea name ="q16" rows="3" cols="200" onfocus="this.value=''" >Your opinion on the Tests in this course.</textarea>
+</tr><br><br>
+<tr>
+Supplementary Reading:
+<br><br>
+<textarea name ="q17" rows="3" cols="200" onfocus="this.value=''" >Your opinion on the supplementary reading for the course.</textarea>
+</tr><br><br>
+<tr>
+Use of Technology:
+<br><br>
+<textarea name ="q18" rows="3" cols="200" onfocus="this.value=''" >Your opinion on the use of technology for the course.</textarea>
+</tr><br><br>
+<tr>
+Projects:
+<br><br>
+<textarea name ="q19" rows="3" cols="200" onfocus="this.value=''" >Your opinion on the projects for this course.</textarea>
+</tr><br><br>
+<tr>
+Field Placement:
+<br><br>
+<textarea name ="q20" rows="3" cols="200" onfocus="this.value=''" >Your opinion on the field placement for this course.</textarea>
+</tr><br><br>
+<tr>
+Labs:
+<br><br>
+<textarea name ="q21" rows="3" cols="200" onfocus="this.value=''">Your opinion on the lab works for this course.</textarea>
+</tr>
+</table>
+
+
+<hr>
+</fieldset>
+	<br>
+	<fieldset >
+<table   >
+
+<tr   >
+ <center><b> The following questions are specially for students in graduate courses.
+ </b></center>
+</tr>
+</table>
+</fieldset>
+<br>
+<fieldset>
+<table width=950>	<tr>
+            	<td width> 22. The course was useful for my professional and/or intellectual goals.</td>
+            </tr></table>		
+
+		<table width="85%">
+			<fieldset>
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q22" id="q22" value="5">
+				<label for="q22">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q22" id="q22" value="4">
+				<label for="q22">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q22" id="q22" value="3">
+				<label for="q22">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q22" id="q22" value="2">
+				<label for="q22">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q22" id="q22" value="1">
+				<label for="q22">Strongly Disagree</label><br>
+				</td>
+            </tr>
+			</fieldset>
+         </table>
+		 <hr>
+	<table width=950><tr>
+            	<td width> 23. The course made reasonable assumptions about my prior knowledge of the subject.</td>
+ </tr></table>		
+<table width="85%">
+	<fieldset>	
+            <tr>
+	<td width="15%">
+				<input type="radio" name="q23" id="q23" value="5">
+				<label for="q23">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q23" id="q23" value="4">
+				<label for="q23">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q23" id="q23" value="3">
+				<label for="q23">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q23" id="q23" value="2">
+				<label for="q23">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q23" id="q23" value="1">
+				<label for="q23">Strongly Disagree</label><br>
+				</td>
+            </tr>
+	</fieldset>
+         </table>
+<hr>
+	<table width=950>	<tr>
+            	<td width> 24. The course addressed current development in the subject.</td>
+            </tr></table>		
+
+		<table width="85%">
+			<fieldset>
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q24" id="q24" value="5">
+				<label for="q24">Strongly Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q24" id="q24" value="4">
+				<label for="q24">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q24" id="q24" value="3">
+				<label for="q24">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q24" id="q24" value="2">
+				<label for="q24">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q24" id="q24" value="1">
+				<label for="q24">Strongly Disagree</label><br>
+				</td>
+            </tr>
+			</fieldset>
+         </table>
+		 <hr>
+		 </fieldset>
+		 
+<center>
+<table>
+<tr><td>
+<input  type="submit" name="submit" value="Submit your evaluation"></center>
+<input type="reset" value="Clear you evaluation">
+ </td></tr>
+ </table>
+	</body>
+</html>
